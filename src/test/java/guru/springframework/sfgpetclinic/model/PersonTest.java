@@ -1,8 +1,7 @@
 package guru.springframework.sfgpetclinic.model;
 
 import guru.springframework.sfgpetclinic.ModelTests;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -30,4 +29,5 @@ class PersonTest implements ModelTests {
                 () -> assertEquals(person.getFirstName(), "John", "First Name failed"),
                 () -> assertEquals(person.getLastName(), "Doe", "Last Name failed"));
     }
+
 }
